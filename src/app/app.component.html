@@ -1,83 +1,77 @@
-<nz-layout style="height: 100vh; overflow: scroll">
-  <nz-header style="color: #fff">🚀 {{ title }}</nz-header>
-  <nz-content>
-    <div style="padding-top: 32px">
-      <div nz-row [nzGutter]="16">
-        <div nz-col nzXs="24" nzMd="8" style="margin-bottom: 20px">
-          <nz-card>
-            <h1>Workshop #2</h1>
+<div style="padding-top: 32px">
+  <div nz-row [nzGutter]="16">
+    <div nz-col nzXs="24" nzMd="8" style="margin-bottom: 20px">
+      <nz-card>
+        <h1>Workshop #2</h1>
 
-            <nz-divider></nz-divider>
+        <nz-divider></nz-divider>
 
-            <h4>Data Binding : {{ description }}</h4>
+        <h4>Data Binding : {{ description }}</h4>
 
-            <br />
+        <br />
 
-            <h4>By 'Keyup' event : {{ result || "-" }}</h4>
+        <h4>By 'Keyup' event : {{ result || "-" }}</h4>
 
-            <input
-              type="text"
-              placeholder="input value"
-              (keyup)="onKeyup($event)"
-            />
+        <input
+          type="text"
+          placeholder="input value"
+          (keyup)="onKeyup($event)"
+        />
 
-            <br />
+        <br />
 
-            <br />
+        <br />
 
-            <h4>By 'Click' event : {{ result || "-" }}</h4>
+        <h4>By 'Click' event : {{ result || "-" }}</h4>
 
-            <button type="button" (click)="onClickNewData()">Halo Halo</button>
-          </nz-card>
-        </div>
-
-        <div nz-col nzXs="24" nzMd="8" style="margin-bottom: 20px">
-          <nz-card>
-            <app-workshop-form-binding></app-workshop-form-binding>
-          </nz-card>
-        </div>
-
-        <div nz-col nzXs="24" nzMd="8" style="margin-bottom: 20px">
-          <nz-card>
-            <h1>Workshop #list</h1>
-
-            <nz-divider></nz-divider>
-
-            <app-workshop-list></app-workshop-list>
-          </nz-card>
-        </div>
-
-        <div nz-col nzXs="24" nzMd="12" style="margin-bottom: 20px">
-          <nz-card>
-            <h1>Workshop #Component</h1>
-
-            <nz-divider></nz-divider>
-
-            <app-login></app-login>
-          </nz-card>
-        </div>
-
-        <div nz-col nzXs="24" nzMd="12" style="margin-bottom: 20px">
-          <nz-card>
-            <h1>Workshop #Pipe</h1>
-
-            <nz-divider></nz-divider>
-
-            <app-workshop-pipe></app-workshop-pipe>
-          </nz-card>
-        </div>
-
-        <div nz-col nzXs="24" nzMd="12" style="margin-bottom: 20px">
-          <nz-card>
-            <h1>Workshop #Rating</h1>
-
-            <nz-divider></nz-divider>
-
-            <app-workshop-rating></app-workshop-rating>
-          </nz-card>
-        </div>
-      </div>
+        <button type="button" (click)="onClickNewData()">Halo Halo</button>
+      </nz-card>
     </div>
-  </nz-content>
-  <!-- <nz-footer>Footer</nz-footer> -->
-</nz-layout>
+
+    <div nz-col nzXs="24" nzMd="8" style="margin-bottom: 20px">
+      <nz-card>
+        <app-workshop-form-binding></app-workshop-form-binding>
+      </nz-card>
+    </div>
+
+    <div nz-col nzXs="24" nzMd="8" style="margin-bottom: 20px">
+      <nz-card>
+        <h1>Workshop #list</h1>
+
+        <nz-divider></nz-divider>
+
+        <app-workshop-list></app-workshop-list>
+      </nz-card>
+    </div>
+
+    <div nz-col nzXs="24" nzMd="12" style="margin-bottom: 20px">
+      <nz-card>
+        <h1>Workshop #Component</h1>
+
+        <nz-divider></nz-divider>
+
+        <app-login></app-login>
+      </nz-card>
+    </div>
+
+    <div nz-col nzXs="24" nzMd="12" style="margin-bottom: 20px">
+      <nz-card>
+        <h1>Workshop #Pipe</h1>
+
+        <nz-divider></nz-divider>
+
+        <app-workshop-pipe></app-workshop-pipe>
+      </nz-card>
+    </div>
+
+    <div nz-col nzXs="24" nzMd="24" style="margin-bottom: 20px">
+      <nz-card>
+        <h1>Workshop #Rating</h1>
+
+        <nz-divider></nz-divider>
+
+        <app-workshop-rating></app-workshop-rating>
+      </nz-card>
+    </div>
+  </div>
+</div>

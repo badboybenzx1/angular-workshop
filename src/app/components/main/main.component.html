@@ -1,0 +1,19 @@
+<nz-layout style="height: 100vh; overflow: scroll">
+  <nz-header style="color: #fff">
+    <div class="logo">🚀 {{ title }}</div>
+    <ul nz-menu nzTheme="dark" nzMode="horizontal">
+      <li nz-menu-item nzMatchRouter>
+        <a [routerLink]="['/', 'workshop']">Workshop</a>
+      </li>
+
+      <li nz-menu-item nzMatchRouter>
+        <a [routerLink]="['/', 'quiz']">Quiz</a>
+      </li>
+    </ul>
+  </nz-header>
+
+  <nz-content>
+    <router-outlet></router-outlet>
+  </nz-content>
+  <!-- <nz-footer>Footer</nz-footer> -->
+</nz-layout>
