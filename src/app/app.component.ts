@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-workshop';
+  title = 'angular-workshop 02';
+
+  result = '..';
+
+  onKeyup(event: any){
+    console.log(event);
+
+    this.result = event.target.value;
+  }
 }
