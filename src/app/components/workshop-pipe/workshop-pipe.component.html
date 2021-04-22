@@ -1,16 +1,6 @@
-<p>login works!</p>
+<h4>Workshop #5</h4>
 
-<!-- <h4>Login Page</h4>
-
-<input type="email" name="" id="" />
-
-<input type="password" name="" id="" />
-
-<button type="button">Login</button> -->
-
-<h4>Workshop #4</h4>
-
-<small> display user list from class 'User'</small>
+<small> change data by 'Custom Pipe'</small>
 
 <div class="ant-table ant-table-content">
   <table style="table-layout: auto">
@@ -25,8 +15,10 @@
     <tbody class="ant-table-tbody">
       <tr class="ant-table-row" *ngFor="let user of users; index as i">
         <td class="ant-table-cell">{{ user.id }}</td>
-        <td class="ant-table-cell">{{ user.firstName }}</td>
-        <td class="ant-table-cell">{{ user.lastName }}</td>
+        <td class="ant-table-cell">{{ user.firstName | uppercaseWithDot }}</td>
+        <td class="ant-table-cell">
+          {{ user.lastName | replaceWithDash: i }}
+        </td>
         <td class="ant-table-cell">{{ user.email }}</td>
       </tr>
     </tbody>

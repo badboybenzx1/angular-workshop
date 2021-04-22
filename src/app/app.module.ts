@@ -21,6 +21,9 @@ import {
   WorkshopFormBindingComponent,
   LoginComponent,
 } from './components';
+import { WorkshopPipeComponent } from './components/workshop-pipe/workshop-pipe.component';
+
+import { ReplaceWithDashPipe, UppercaseWithDotPipe } from './pipes';
 
 registerLocaleData(en);
 
@@ -30,6 +33,9 @@ registerLocaleData(en);
     WorkshopListComponent,
     WorkshopFormBindingComponent,
     LoginComponent,
+    WorkshopPipeComponent,
+    ReplaceWithDashPipe,
+    UppercaseWithDotPipe,
   ],
   imports: [
     BrowserModule,
