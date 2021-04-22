@@ -1,4 +1,4 @@
-<h4>Workshop #6</h4>
+<h4>Workshop #6, #7</h4>
 
 <small> display rating emoji ⭐ from 'Rating Component'</small>
 
@@ -20,9 +20,16 @@
         <td class="ant-table-cell">{{ user.lastName }}</td>
         <td class="ant-table-cell">{{ user.email }}</td>
         <td class="ant-table-cell">
-          <app-rating [rating]="user.rating"></app-rating>
+          <app-rating
+            [rating]="user.rating"
+            (ratingClicked)="onClickedFromRating(i, $event)"
+          ></app-rating>
         </td>
       </tr>
     </tbody>
   </table>
 </div>
+
+<br />
+
+<p>Received rating data : {{ rating || "-" }}</p>

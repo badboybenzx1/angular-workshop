@@ -9,6 +9,8 @@ import { User } from 'src/app/models';
 export class WorkshopRatingComponent implements OnInit {
   users: User[] = [];
 
+  rating?: number;
+
   constructor() {}
 
   ngOnInit(): void {
@@ -17,5 +19,11 @@ export class WorkshopRatingComponent implements OnInit {
       new User(2, 'leonardo', 'dicaprio', 'leonardo.dicaprio@gmail.com', 3),
       new User(3, 'tom', 'hank', 'tom.hank@gmail.com', 5),
     ];
+  }
+
+  onClickedFromRating(index: number, $event: number) {
+    this.rating = $event + 1;
+
+    this.users[index].rating = $event + 1;
   }
 }

@@ -1,1 +1,8 @@
-<span *ngFor="let i of [].constructor(rating)"> ⭐ </span>
+<span
+  class="rate"
+  *ngFor="let i of [].constructor(5); index as index"
+  [class.gray]="!rating || index >= rating"
+  (click)="onClickRate(index)"
+>
+  ⭐
+</span>
