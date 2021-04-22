@@ -1,0 +1,28 @@
+<h4>Workshop #6</h4>
+
+<!-- <small> display user list from class 'User'</small> -->
+
+<div class="ant-table ant-table-content">
+  <table style="table-layout: auto">
+    <thead class="ant-table-thead">
+      <tr class="ant-table-row">
+        <th class="ant-table-cell">#</th>
+        <th class="ant-table-cell">First Name</th>
+        <th class="ant-table-cell">Last Name</th>
+        <th class="ant-table-cell">Email</th>
+        <th class="ant-table-cell">Rating</th>
+      </tr>
+    </thead>
+    <tbody class="ant-table-tbody">
+      <tr class="ant-table-row" *ngFor="let user of users; index as i">
+        <td class="ant-table-cell">{{ user.id }}</td>
+        <td class="ant-table-cell">{{ user.firstName }}</td>
+        <td class="ant-table-cell">{{ user.lastName }}</td>
+        <td class="ant-table-cell">{{ user.email }}</td>
+        <td class="ant-table-cell">
+            <app-rating [rating]="user.rating"></app-rating>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

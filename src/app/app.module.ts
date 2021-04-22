@@ -20,8 +20,10 @@ import {
   WorkshopListComponent,
   WorkshopFormBindingComponent,
   LoginComponent,
+  WorkshopPipeComponent,
+  WorkshopRatingComponent,
+  RatingComponent,
 } from './components';
-import { WorkshopPipeComponent } from './components/workshop-pipe/workshop-pipe.component';
 
 import { ReplaceWithDashPipe, UppercaseWithDotPipe } from './pipes';
 
@@ -36,6 +38,8 @@ registerLocaleData(en);
     WorkshopPipeComponent,
     ReplaceWithDashPipe,
     UppercaseWithDotPipe,
+    WorkshopRatingComponent,
+    RatingComponent,
   ],
   imports: [
     BrowserModule,
