@@ -1,1 +1,24 @@
-<p>quiz works!</p>
+<div style="padding-top: 32px">
+  <div nz-col nzXs="24" nzMd="12" style="margin-bottom: 20px">
+    <nz-card>
+      <h1>Day two Quiz 💬</h1>
+
+      <nz-divider></nz-divider>
+
+      <h4>Javascript Workshop</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+
+      <app-like-button
+        [liked]="state === 'like'"
+        (buttonClicked)="onClicked($event)"
+      ></app-like-button>
+      <app-dislike-button
+        [disliked]="state === 'dislike'"
+        (buttonClicked)="onClicked($event)"
+      ></app-dislike-button>
+    </nz-card>
+  </div>
+</div>

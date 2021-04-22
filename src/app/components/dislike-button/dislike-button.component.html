@@ -1,0 +1,10 @@
+<button
+  type="button"
+  class="dislike-button"
+  style="margin-left: 16px"
+  [class.disliked]="disliked"
+  (click)="onClicked()"
+>
+  Dislike |
+  <span class="dislikes-counter">{{ value | plusNumber: disliked }}</span>
+</button>

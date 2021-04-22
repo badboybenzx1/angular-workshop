@@ -6,3 +6,5 @@ export * from './workshop-pipe/workshop-pipe.component';
 export * from './workshop-rating/workshop-rating.component';
 export * from './rating/rating.component';
 export * from './quiz/quiz.component';
+export * from './like-button/like-button.component';
+export * from './dislike-button/dislike-button.component';

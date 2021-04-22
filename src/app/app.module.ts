@@ -26,9 +26,15 @@ import {
   WorkshopRatingComponent,
   RatingComponent,
   QuizComponent,
+  LikeButtonComponent,
+  DislikeButtonComponent,
 } from './components';
 
-import { ReplaceWithDashPipe, UppercaseWithDotPipe } from './pipes';
+import {
+  ReplaceWithDashPipe,
+  UppercaseWithDotPipe,
+  PlusNumberPipe,
+} from './pipes';
 
 registerLocaleData(en);
 
@@ -45,6 +51,9 @@ registerLocaleData(en);
     RatingComponent,
     MainComponent,
     QuizComponent,
+    LikeButtonComponent,
+    DislikeButtonComponent,
+    PlusNumberPipe,
   ],
   imports: [
     BrowserModule,

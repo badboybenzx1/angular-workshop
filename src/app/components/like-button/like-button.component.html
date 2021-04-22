@@ -1,0 +1,8 @@
+<button
+  type="button"
+  class="like-button"
+  [class.liked]="liked"
+  (click)="onClicked()"
+>
+  Like | <span class="likes-counter">{{ value | plusNumber: liked }}</span>
+</button>
