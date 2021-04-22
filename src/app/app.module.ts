@@ -15,9 +15,12 @@ import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzCardModule } from 'ng-zorro-antd/card';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
-import { WorkshopListComponent } from './components/workshop-list/workshop-list.component';
-import { WorkshopFormBindingComponent } from './components/workshop-form-binding/workshop-form-binding.component';
-import { LoginComponent } from './components/login/login.component';
+
+import {
+  WorkshopListComponent,
+  WorkshopFormBindingComponent,
+  LoginComponent,
+} from './components';
 
 registerLocaleData(en);
 
@@ -26,7 +29,7 @@ registerLocaleData(en);
     AppComponent,
     WorkshopListComponent,
     WorkshopFormBindingComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,9 +40,9 @@ registerLocaleData(en);
     NzLayoutModule,
     NzGridModule,
     NzCardModule,
-    NzDividerModule
+    NzDividerModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
